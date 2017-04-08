@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  
+     <filter>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>com.filter.LoginFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>*.jsp</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QueryUserServlet</servlet-name>
+    <servlet-class>com.servlet.QueryUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>delUserServlet</servlet-name>
+    <servlet-class>com.servlet.delUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdUserServlet</servlet-name>
+    <servlet-class>com.servlet.UpdUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddUserServlet</servlet-name>
+    <servlet-class>com.servlet.AddUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdPwdServlet</servlet-name>
+    <servlet-class>com.servlet.UpdPwdServlet</servlet-class>
+  </servlet>
+
+
+
+ <servlet>
+    <servlet-name>AddSRInfoSlt</servlet-name>
+    <servlet-class>com.servlet.AddSRInfoSlt</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QuerySRInfo</servlet-name>
+    <servlet-class>com.servlet.QuerySRInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DelSRInfoSlt</servlet-name>
+    <servlet-class>com.servlet.DelSRInfoSlt</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QueryDetailInfoSlt</servlet-name>
+    <servlet-class>com.servlet.QueryDetailInfoSlt</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateSRInfoSlt</servlet-name>
+    <servlet-class>com.servlet.UpdateSRInfoSlt</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DelSomeSRInfoSlt</servlet-name>
+    <servlet-class>com.servlet.DelSomeSRInfoSlt</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddSRInfoSlt1</servlet-name>
+    <servlet-class>com.servlet.AddSRInfoSlt1</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdatePsSlt</servlet-name>
+    <servlet-class>com.servlet.UpdatePsSlt</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QuitSlt</servlet-name>
+    <servlet-class>com.servlet.QuitSlt</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>AddSRInfoSlt</servlet-name>
+    <url-pattern>/AddSRInfoSlt</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QuerySRInfo</servlet-name>
+    <url-pattern>/QuerySRInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelSRInfoSlt</servlet-name>
+    <url-pattern>/DelSRInfoSlt</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryDetailInfoSlt</servlet-name>
+    <url-pattern>/QueryDetailInfoSlt</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateSRInfoSlt</servlet-name>
+    <url-pattern>/UpdateSRInfoSlt</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelSomeSRInfoSlt</servlet-name>
+    <url-pattern>/DelSomeSRInfoSlt</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddSRInfoSlt1</servlet-name>
+    <url-pattern>/AddSRInfoSlt1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdatePsSlt</servlet-name>
+    <url-pattern>/UpdatePsSlt</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QuitSlt</servlet-name>
+    <url-pattern>/QuitSlt</url-pattern>
+  </servlet-mapping>	
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryUserServlet</servlet-name>
+    <url-pattern>/QueryUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delUserServlet</servlet-name>
+    <url-pattern>/delUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdUserServlet</servlet-name>
+    <url-pattern>/UpdUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddUserServlet</servlet-name>
+    <url-pattern>/AddUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdPwdServlet</servlet-name>
+    <url-pattern>/UpdPwdServlet</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
